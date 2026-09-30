@@ -1,0 +1,43 @@
+{
+    "env": {
+        "PROJ_DIR": "${workspaceFolder}"
+    },
+    "configurations": [
+        {
+            "name": "YTM32B1LE1",
+            "intelliSenseMode": "gcc-x64",
+            "includePath": [
+                "${PROJ_DIR}/board",
+                "${PROJ_DIR}/platform/drivers/src/clock/YTM32B1Lx",
+                "${PROJ_DIR}/platform/drivers/src/pins",
+                "${PROJ_DIR}/platform/drivers/src/dma",
+                "${PROJ_DIR}/platform/drivers/src/uart",
+                "${PROJ_DIR}/platform/drivers/inc",
+                "${PROJ_DIR}/platform/devices/common",
+                "${PROJ_DIR}/platform/devices",
+                "${PROJ_DIR}/platform/devices/YTM32B1LE1/include",
+                "${PROJ_DIR}/platform/devices/YTM32B1LE1/startup",
+                "${PROJ_DIR}/CMSIS/Core/Include",
+                "${PROJ_DIR}/rtos/osif"
+            ],
+            "defines": [
+                "YTM32B1LE1",
+                "CPU_YTM32B1LE1"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "compileCommands": [
+                "${workspaceFolder}/build/compile_commands.json"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
