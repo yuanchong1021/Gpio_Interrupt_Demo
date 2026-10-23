@@ -233,7 +233,7 @@
                 }
               },
               "fxosc": {
-                "enable": true,
+                "enable": false,
                 "dsEnable": false,
                 "freq": {
                   "value": 24,
@@ -716,7 +716,7 @@
                   "name": "UART1_CLK",
                   "gate": true,
                   "busSrc": 0,
-                  "periSrc": 3,
+                  "periSrc": 2,
                   "userCtrl": true,
                   "busClock": [
                     "SLOW_BUS_CLK"
@@ -815,7 +815,7 @@
           }
         ]
       },
-      "updateTime": 1790661611782,
+      "updateTime": 1791424178534,
       "lock": false,
       "type": "driver"
     },

@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "D:\soft\IAR\common\bin\cspybat" -f "D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\EWARM\settings\Gpio_Interrupt_Demo.FLASH.general.xcl" --backend -f "D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\EWARM\settings\Gpio_Interrupt_Demo.FLASH.driver.xcl" 
+& "D:\soft\IAR\common\bin\cspybat" -f "D:\project\YTM32B1LE14\DifferentialTool\EWARM\settings\Gpio_Interrupt_Demo.FLASH.general.xcl" --backend -f "D:\project\YTM32B1LE14\DifferentialTool\EWARM\settings\Gpio_Interrupt_Demo.FLASH.driver.xcl" 
 }
 else
 {
-& "D:\soft\IAR\common\bin\cspybat" -f "D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\EWARM\settings\Gpio_Interrupt_Demo.FLASH.general.xcl" --debug_file=$debugfile --backend -f "D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\EWARM\settings\Gpio_Interrupt_Demo.FLASH.driver.xcl" 
+& "D:\soft\IAR\common\bin\cspybat" -f "D:\project\YTM32B1LE14\DifferentialTool\EWARM\settings\Gpio_Interrupt_Demo.FLASH.general.xcl" --debug_file=$debugfile --backend -f "D:\project\YTM32B1LE14\DifferentialTool\EWARM\settings\Gpio_Interrupt_Demo.FLASH.driver.xcl" 
 }

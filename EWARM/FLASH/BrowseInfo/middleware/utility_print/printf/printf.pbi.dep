@@ -1,12 +1,12 @@
-D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\EWARM\FLASH\BrowseInfo\middleware\utility_print\printf\printf.pbi: \
-  D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\middleware\utility_print\printf\printf.c \
+D:\project\YTM32B1LE14\DifferentialTool\EWARM\FLASH\BrowseInfo\middleware\utility_print\printf\printf.pbi: \
+  D:\project\YTM32B1LE14\DifferentialTool\middleware\utility_print\printf\printf.c \
   D:\soft\IAR\arm\inc\c\stdarg.h D:\soft\IAR\arm\inc\c\stddef.h \
   D:\soft\IAR\arm\inc\c\ycheck.h D:\soft\IAR\arm\inc\c\yvals.h \
   D:\soft\IAR\arm\inc\c\DLib_Defaults.h \
   D:\soft\IAR\arm\inc\c\DLib_Config_Normal.h \
   D:\soft\IAR\arm\inc\c\DLib_Product.h D:\soft\IAR\arm\inc\c\ysizet.h \
-  D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\middleware\utility_print\printf\printf.h \
+  D:\project\YTM32B1LE14\DifferentialTool\middleware\utility_print\printf\printf.h \
   D:\soft\IAR\arm\inc\c\stdint.h \
-  D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\EWARM\..\board\utility_print_config.h \
-  D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\EWARM\..\platform\devices\status.h \
-  D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\middleware\utility_print\printf\printf.h
+  D:\project\YTM32B1LE14\DifferentialTool\EWARM\..\board\utility_print_config.h \
+  D:\project\YTM32B1LE14\DifferentialTool\EWARM\..\platform\devices\status.h \
+  D:\project\YTM32B1LE14\DifferentialTool\middleware\utility_print\printf\printf.h

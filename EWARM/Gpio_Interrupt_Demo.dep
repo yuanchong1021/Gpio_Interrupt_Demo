@@ -5,8 +5,557 @@
     <configuration>
         <name>FLASH</name>
         <outputs>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\uart\uart_driver.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\rtos\osif\osif_baremetal.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\RamInit0.o</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\vector.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\dma_config.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\FLASH\Exe\Gpio_Interrupt_Demo.hex</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\pin_mux.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\RamInit1.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\FLASH\Exe\Gpio_Interrupt_Demo.out</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\startup.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\uart_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\uart\uart_irq.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\middleware\utility_print\printf\printf.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\utility_flash_ecc_fault_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\vector_table_copy.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\uart\uart_hw_access.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\pins\pins_port_hw_access.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\middleware\utility_flash_ecc_fault\flash_ecc_fault_asm.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\clock\YTM32B1Lx\clock_YTM32B1Lx.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\middleware\utility_flash_ecc_fault\flash_ecc_fault.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\board\uart_config.c</file>
+            <file>$PROJ_DIR$\..\board\interrupt_config.h</file>
+            <file>$PROJ_DIR$\..\board\utility_print_config.h</file>
+            <file>$PROJ_DIR$\..\board\utility_flash_ecc_fault_config.h</file>
+            <file>$PROJ_DIR$\..\board\dma_config.h</file>
+            <file>$PROJ_DIR$\..\board\uart_config.h</file>
+            <file>$PROJ_DIR$\..\board\sdk_project_config.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Core\Include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Core\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\board\utility_flash_ecc_fault_config.c</file>
+            <file>$PROJ_DIR$\..\CMSIS\Core\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Core\Include\core_cm0plus.h</file>
+            <file>$PROJ_DIR$\..\board\utility_print_config.c</file>
+            <file>$PROJ_DIR$\..\board\dma_config.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\uart\uart_hw_access.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\uart\uart_irq.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\clock.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\clock_manager.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\clock\YTM32B1Lx\cmu_hw_access.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\pins\pins_driver.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\pins_driver.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\uart\uart_irq.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\dma\dma_irq.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\interrupt_manager.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\clock\YTM32B1Lx\scu_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\clock\YTM32B1Lx\cfmu_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\clock\YTM32B1Lx\clock_YTM32B1Lx.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\pins\pins_port_hw_access.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\pins\pins_gpio_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\interrupt\interrupt_manager.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\dma\dma_hw_access.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\dma\dma_driver.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\clock\YTM32B1Lx\clock_YTM32B1Lx.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\clock\YTM32B1Lx\ipc_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\pins\pins_port_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\uart\uart_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\dma\dma_irq.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\dma\dma_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\uart\uart_driver.c</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\devices\YTM32B1LE1\startup\system_YTM32B1LE1.o</file>
+            <file>$PROJ_DIR$\..\rtos\osif\osif_baremetal.c</file>
+            <file>$PROJ_DIR$\..\middleware\utility_flash_ecc_fault\flash_ecc_fault_asm.S</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\interrupt_config.o</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\uart_driver.h</file>
+            <file>$PROJ_DIR$\FLASH\List\Gpio_Interrupt_Demo.map</file>
+            <file>$PROJ_DIR$\..\middleware\utility_print\printf\printf.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\..\platform\devices\devassert.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\dma\dma_driver.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\clock_config.o</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$PROJ_DIR$\..\rtos\osif\osif.h</file>
+            <file>$PROJ_DIR$\..\middleware\utility_flash_ecc_fault\flash_ecc_fault.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\pins\pins_driver.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\RamInit2.o</file>
+            <file>$PROJ_DIR$\..\middleware\utility_flash_ecc_fault\flash_ecc_fault.c</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\dma\dma_irq.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\..\platform\devices\status.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\..\platform\devices\YTM32B1LE1\startup\system_YTM32B1LE1.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\dma_driver.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\interrupt\interrupt_manager.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\..\platform\devices\YTM32B1LE1\include\YTM32B1LE1_features.h</file>
+            <file>$PROJ_DIR$\..\platform\devices\YTM32B1LE1\startup\system_YTM32B1LE1.h</file>
+            <file>$PROJ_DIR$\..\platform\devices\callbacks.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\..\middleware\utility_print\printf\printf.c</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\dma\dma_hw_access.o</file>
+            <file>$PROJ_DIR$\..\platform\devices\YTM32B1LE1\include\YTM32B1LE1.h</file>
+            <file>$PROJ_DIR$\..\platform\devices\device_registers.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\main.o</file>
+            <file>$PROJ_DIR$\..\platform\devices\common\core_common.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\utility_print_config.o</file>
+            <file>$PROJ_DIR$\..\board\interrupt_config.c</file>
+            <file>$PROJ_DIR$\..\board\vector.S</file>
+            <file>$PROJ_DIR$\..\board\vector_table_copy.c</file>
+            <file>$PROJ_DIR$\..\board\pin_mux.h</file>
+            <file>$PROJ_DIR$\..\board\RamInit1.c</file>
+            <file>$PROJ_DIR$\..\board\clock_config.h</file>
+            <file>$PROJ_DIR$\..\board\pin_mux.c</file>
+            <file>$PROJ_DIR$\..\board\yt_linker.icf</file>
+            <file>$PROJ_DIR$\..\board\RamInit0.S</file>
+            <file>$PROJ_DIR$\..\board\RamInit2.c</file>
+            <file>$PROJ_DIR$\..\board\startup.S</file>
             <file>$PROJ_DIR$\..\app\main.c</file>
+            <file>$PROJ_DIR$\..\board\clock_config.c</file>
         </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 12 71</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\FLASH\Exe\Gpio_Interrupt_Demo.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 8</file>
+                </tool>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 71</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 111 76 22 6 75 98 83 23 21 69 89 101 1 9 80 20 16 2 10 81 13 65 14 0 19 15 17 103 5 18 3 77 68 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\uart_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 30 70 92 11 84 91 73 90 24 100 99 96 86 36 33 35 32 7 102 94 93 74 85 49 78 88 95</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\utility_flash_ecc_fault_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 92 11 84 91 73 90 24 28 79 86 85 100 99 96 36 33 35 32 7 102 94 93 74</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\utility_print_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27 85 72 96 11 84 91 73 90 92 24 30 70 100 99 86 36 33 35 32 7 102 94 93 74 49 78 88 95</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\dma_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 92 11 84 91 73 90 24 29 88 100 99 96 86 36 33 35 32 7 102 94 93 74 85</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\uart\uart_hw_access.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 61 70 92 11 84 91 73 90 24 100 99 96 86 36 33 35 32 7 102 94 93 74 85 49 78 88 95</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\uart\uart_irq.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 47 100 99 96 11 84 91 73 90 86 92 24 36 33 35 32 7 102 94 93 74 49</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\pins\pins_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 80</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 100 99 96 11 84 91 73 90 86 92 24 36 33 35 32 7 102 94 93 74 54 46 85 60</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\clock\YTM32B1Lx\clock_YTM32B1Lx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 100 99 96 11 84 91 73 90 86 92 24 36 33 35 32 7 102 94 93 74 59 50 41 85 58 49 51 43</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\pins\pins_port_hw_access.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 60 46 92 11 84 91 73 90 24 100 99 96 86 36 33 35 32 7 102 94 93 74 85 54</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\interrupt\interrupt_manager.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 89</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 49 100 99 96 11 84 91 73 90 86 92 24 36 33 35 32 7 102 94 93 74</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\dma\dma_hw_access.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 98</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 63 96 11 84 91 73 90 86 88 100 99 92 24 36 33 35 32 7 102 94 93 74 85 49</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\dma\dma_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48 63 96 11 84 91 73 90 86 88 100 99 92 24 36 33 35 32 7 102 94 93 74 85 42 41 58 49</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\dma\dma_irq.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 83</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48 63 96 11 84 91 73 90 86 88 100 99 92 24 36 33 35 32 7 102 94 93 74 85</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\uart\uart_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 92 11 84 91 73 90 24 86 61 70 100 99 96 36 33 35 32 7 102 94 93 74 85 49 78 88 95 47 42 41 58</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\rtos\osif\osif_baremetal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 78 96 11 84 91 73 90 85 92 24 100 99 86 36 33 35 32 7 102 94 93 74 49 42 41 58</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\middleware\utility_flash_ecc_fault\flash_ecc_fault_asm.S</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\middleware\utility_flash_ecc_fault\flash_ecc_fault.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 79 86 92 11 84 91 73 90 24 85 100 99 96 36 33 35 32 7 102 94 93 74 49</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\devices\YTM32B1LE1\startup\system_YTM32B1LE1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 65</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 100 99 96 11 84 91 73 90 86 92 24 36 33 35 32 7 102 94 93 74</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\middleware\utility_print\printf\printf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 44 92 11 84 91 73 90 24 72 96 27 85</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\interrupt_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 92 11 84 91 73 90 24 26 49 100 99 96 86 36 33 35 32 7 102 94 93 74</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\vector.S</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 5</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\vector_table_copy.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 96 11 84 91 73 90 100 99 86 92 24 36 33 35 32 7 102 94 93 74</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\RamInit1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 96 11 84 91 73 90 86 100 99 92 24 36 33 35 32 7 102 94 93 74</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\pin_mux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 107 46 92 11 84 91 73 90 24 100 99 96 86 36 33 35 32 7 102 94 93 74 85</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\RamInit0.S</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\RamInit2.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 81</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\startup.S</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 101</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 31 109 41 100 99 96 11 84 91 73 90 86 92 24 36 33 35 32 7 102 94 93 74 85 58 107 46 26 49 29 88 30 70 78 95 28 79 27 72</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\clock_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 76</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 92 11 84 91 73 90 24 109 41 100 99 96 86 36 33 35 32 7 102 94 93 74 85 58</file>
+                </tool>
+            </inputs>
+        </file>
         <forcedrebuild>
             <name>[REBUILD_ALL]</name>
         </forcedrebuild>

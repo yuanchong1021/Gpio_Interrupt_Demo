@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\soft\IAR\common\bin\cspybat" -f "D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\EWARM\settings\Gpio_Interrupt_Demo.FLASH.general.xcl" --backend -f "D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\EWARM\settings\Gpio_Interrupt_Demo.FLASH.driver.xcl" 
+"D:\soft\IAR\common\bin\cspybat" -f "D:\project\YTM32B1LE14\DifferentialTool\EWARM\settings\Gpio_Interrupt_Demo.FLASH.general.xcl" --backend -f "D:\project\YTM32B1LE14\DifferentialTool\EWARM\settings\Gpio_Interrupt_Demo.FLASH.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\soft\IAR\common\bin\cspybat" -f "D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\EWARM\settings\Gpio_Interrupt_Demo.FLASH.general.xcl" "--debug_file=%~1" --backend -f "D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\EWARM\settings\Gpio_Interrupt_Demo.FLASH.driver.xcl" 
+"D:\soft\IAR\common\bin\cspybat" -f "D:\project\YTM32B1LE14\DifferentialTool\EWARM\settings\Gpio_Interrupt_Demo.FLASH.general.xcl" "--debug_file=%~1" --backend -f "D:\project\YTM32B1LE14\DifferentialTool\EWARM\settings\Gpio_Interrupt_Demo.FLASH.driver.xcl" 
 
 @echo off 
 :end

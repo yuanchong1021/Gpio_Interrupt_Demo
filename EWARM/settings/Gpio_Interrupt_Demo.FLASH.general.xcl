@@ -1,10 +1,12 @@
 "D:\soft\IAR\arm\bin\armPROC.dll" 
 
-"D:\soft\IAR\arm\bin\armSIM2.dll" 
+"D:\soft\IAR\arm\bin\armJLINK.dll" 
 
-"D:\project\YTM32B1LE14\Gpio_Interrupt_Demo\EWARM\FLASH\Exe\Gpio_Interrupt_Demo.out" 
+"D:\project\YTM32B1LE14\DifferentialTool\EWARM\FLASH\Exe\Gpio_Interrupt_Demo.out" 
 
 --plugin="D:\soft\IAR\arm\bin\armbat.dll" 
+
+--flash_loader="D:\soft\IAR\arm/config/flashloader/YTMicro/FlashYTM32B1LE15.board" 
 
 
 

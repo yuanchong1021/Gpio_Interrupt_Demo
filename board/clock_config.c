@@ -25,7 +25,7 @@ peripheral_clock_config_t clock_config0PeripheralClockConfig[2] = {
         .clkName = UART1_CLK,
         .clkGate = true,
         .divider = DIV_BY_1,
-        .clkSrc = CLK_SRC_FXOSC,
+        .clkSrc = CLK_SRC_SIRC,
     },
 };
 
@@ -37,7 +37,7 @@ const scu_config_t clock_config0ScuConfig = {
     .sysClkSrc = SCU_SYSTEM_CLOCK_SRC_FIRC,
     .fxoscConfig =
         {
-            .enable = true,
+            .enable = false,
             .bypassMode = false,
             .gainSelection = 6,
             .frequency = 24000000U,
